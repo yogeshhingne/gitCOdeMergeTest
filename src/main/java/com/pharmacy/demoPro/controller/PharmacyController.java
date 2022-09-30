@@ -68,11 +68,6 @@ public class PharmacyController {
         return pharmacyService.petPharmacies();
     }
 
-//    @PutMapping("updatePetPharmacy")
-//    public PetPharmacy updatePetpharmacies(@RequestBody PetPharmacy petPharmacy) {
-//        return pharmacyService.updatePetPharmacy(petPharmacy);
-//    }
-
     @PostMapping("insertPetPharmacy")
     public PetPharmacy insertPetpharmacies(@RequestBody PetPharmacy petPharmacy) {
         return pharmacyService.insertPetPharmacy(petPharmacy);

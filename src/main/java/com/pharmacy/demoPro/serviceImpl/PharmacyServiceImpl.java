@@ -107,4 +107,9 @@ public class PharmacyServiceImpl implements PharmacyService {
 //        return petPharmacy;
 //    }
 
+
+    public int add (int a, int b){
+        return  a+b;
+    }
+
 }
