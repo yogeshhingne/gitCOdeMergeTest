@@ -76,7 +76,7 @@ public class PharmacyServiceImpl implements PharmacyService {
 
     @Override
     public Pharmacy updatePharmacy(Integer medicine_id,Pharmacy pharmacy) {
-        Pharmacy  pharmacy1 = pharmacyRepo.getById(medicine_id);
+        Pharmacy  pharmacy1 = pharmacyRepo.findById(medicine_id).get();
         pharmacy1.setMedicine_name(pharmacy.getMedicine_name());
         pharmacy1.setPrice(pharmacy.getPrice());
         pharmacy1.setQuantity(pharmacy.getQuantity());
@@ -106,5 +106,10 @@ public class PharmacyServiceImpl implements PharmacyService {
 //        petRepo.save(pet);
 //        return petPharmacy;
 //    }
+
+
+    public String name(){
+        return "Gayatri";
+    }
 
 }
